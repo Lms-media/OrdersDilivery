@@ -1,0 +1,23 @@
+root = true
+
+[*.cs]
+# Core formatting (Google dictates 4 spaces, no tabs)
+indent_style = space
+indent_size = 4
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Google C# Style: Braces on the same line (K&R Style)
+csharp_space_between_parentheses = false
+csharp_new_line_before_open_brace = none
+csharp_new_line_before_else = false
+csharp_new_line_before_catch = false
+csharp_new_line_before_finally = false
+
+# Wrapping and spacing behaviors
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_after_comma = true
+csharp_space_before_comma = false
+csharp_space_after_semicolon_in_for_statement = true

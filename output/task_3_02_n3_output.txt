@@ -1,0 +1,12 @@
+=== Запуск решения задачи о доставке заказов методом ветвей и границ ===
+
+Task with 3 orders
+Order 1: due date: 19
+Order 2: due date: 23
+Order 3: due date: 19
+0  20 7  20 
+20 0  15 0  
+7  15 0  15 
+20 0  15 0  
+Visited nodes count: 4
+Best node: Node(fixedPart: [1, 2, 3], variablePart: [], upperValue: 3, lowerValue: 3)
