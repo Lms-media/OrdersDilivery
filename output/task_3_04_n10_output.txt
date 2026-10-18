@@ -1,26 +1,7 @@
-=== Запуск решения задачи о доставке заказов методом ветвей и границ ===
+=== Task task_3_04_n10.txt ===
 
-Task with 10 orders
-Order 1: due date: 49
-Order 2: due date: 117
-Order 3: due date: 112
-Order 4: due date: 103
-Order 5: due date: 115
-Order 6: due date: 97
-Order 7: due date: 92
-Order 8: due date: 51
-Order 9: due date: 119
-Order 10: due date: 119
-0  5  14 11 5  14 78 71 63 68 75 
-5  0  11 10 7  11 81 75 67 71 78 
-14 11 0  5  11 0  78 73 65 67 74 
-11 10 5  0  7  5  74 69 61 63 70 
-5  7  11 7  0  11 74 68 60 64 71 
-14 11 0  5  11 0  78 73 65 67 74 
-78 81 78 74 74 78 0  15 15 11 5  
-71 75 73 69 68 73 15 0  10 18 18 
-63 67 65 61 60 65 15 10 0  11 15 
-68 71 67 63 64 67 11 18 11 0  7  
-75 78 74 70 71 74 5  18 15 7  0  
-Visited nodes count: 19
-Best node: Node(fixedPart: [2, 1, 4, 3, 5, 9, 10, 6, 7, 8], variablePart: [], upperValue: 3, lowerValue: 3)
+Visited nodes count: 361 (MinUpperValue)
+Visited nodes count: 116 (MinUpperValue, improve)
+Best node: Node(fixedPart: [1, 2, 5, 3, 6, 9, 10, 4, 7, 8], variablePart: [], upperValue: 3, lowerValue: 3) (MinUpperValue)
+Best node: Node(fixedPart: [1, 2, 5, 3, 6, 9, 10, 4, 7, 8], variablePart: [], upperValue: 3, lowerValue: 3) (MinUpperValue, improve)
+Measure: 0,6786703601108033

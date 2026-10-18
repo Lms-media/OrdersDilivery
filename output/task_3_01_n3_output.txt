@@ -1,12 +1,7 @@
-=== Запуск решения задачи о доставке заказов методом ветвей и границ ===
+=== Task task_3_01_n3.txt ===
 
-Task with 3 orders
-Order 1: due date: 26
-Order 2: due date: 29
-Order 3: due date: 28
-0  15 15 5  
-15 0  0  15 
-15 0  0  15 
-5  15 15 0  
-Visited nodes count: 4
-Best node: Node(fixedPart: [1, 3, 2], variablePart: [], upperValue: 2, lowerValue: 2)
+Visited nodes count: 4 (MinUpperValue)
+Visited nodes count: 4 (MinUpperValue, improve)
+Best node: Node(fixedPart: [3, 1, 2], variablePart: [], upperValue: 0, lowerValue: 0) (MinUpperValue)
+Best node: Node(fixedPart: [3, 1, 2], variablePart: [], upperValue: 0, lowerValue: 0) (MinUpperValue, improve)
+Measure: 0

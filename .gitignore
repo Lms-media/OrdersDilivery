@@ -1,3 +1,5 @@
 .vscode
 OrdersDilivery/bin
 OrdersDilivery/obj
+.DS_Store
+OrdersDilivery/.DS_Store

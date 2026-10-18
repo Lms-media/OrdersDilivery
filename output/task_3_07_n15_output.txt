@@ -1,36 +1,7 @@
-=== Запуск решения задачи о доставке заказов методом ветвей и границ ===
+=== Task task_3_07_n15.txt ===
 
-Task with 15 orders
-Order 1: due date: 32
-Order 2: due date: 28
-Order 3: due date: 27
-Order 4: due date: 33
-Order 5: due date: 49
-Order 6: due date: 15
-Order 7: due date: 63
-Order 8: due date: 83
-Order 9: due date: 84
-Order 10: due date: 70
-Order 11: due date: 77
-Order 12: due date: 93
-Order 13: due date: 85
-Order 14: due date: 114
-Order 15: due date: 115
-0  4  5  4  5  3  31 30 31 32 15 13 11 12 12 13 
-4  0  1  4  1  1  28 27 28 30 18 15 14 15 15 17 
-5  1  0  5  0  2  29 27 29 30 17 15 13 14 15 16 
-4  4  5  0  5  4  28 26 27 29 18 17 15 15 15 17 
-5  1  0  5  0  2  29 27 29 30 17 15 13 14 15 16 
-3  1  2  4  2  0  29 27 29 30 17 15 13 14 14 16 
-31 28 29 28 29 29 0  2  3  2  45 43 42 42 42 44 
-30 27 27 26 27 27 2  0  4  4  44 42 40 41 41 42 
-31 28 29 27 29 29 3  4  0  2  45 43 42 42 42 44 
-32 30 30 29 30 30 2  4  2  0  46 44 43 44 44 45 
-15 18 17 18 17 17 45 44 45 46 0  3  4  3  4  4  
-13 15 15 17 15 15 43 42 43 44 3  0  2  3  5  5  
-11 14 13 15 13 13 42 40 42 43 4  2  0  1  4  5  
-12 15 14 15 14 14 42 41 42 44 3  3  1  0  3  4  
-12 15 15 15 15 14 42 41 42 44 4  5  4  3  0  2  
-13 17 16 17 16 16 44 42 44 45 4  5  5  4  2  0  
-Visited nodes count: 765
-Best node: Node(fixedPart: [3, 5, 2, 1, 4, 9, 7, 8, 12, 14, 15, 6, 10, 11, 13], variablePart: [], upperValue: 4, lowerValue: 4)
+Visited nodes count: 3879 (MinUpperValue)
+Visited nodes count: 679 (MinUpperValue, improve)
+Best node: Node(fixedPart: [5, 1, 2, 4, 3, 13, 12, 10, 11, 15, 14, 8, 9, 6, 7], variablePart: [], upperValue: 2, lowerValue: 2) (MinUpperValue)
+Best node: Node(fixedPart: [5, 1, 2, 4, 3, 13, 12, 10, 11, 15, 14, 8, 9, 6, 7], variablePart: [], upperValue: 2, lowerValue: 2) (MinUpperValue, improve)
+Measure: 0,8249548852797113
