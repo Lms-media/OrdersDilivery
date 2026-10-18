@@ -110,3 +110,24 @@ mean(∆i) -> min
 
 ## Результаты
 Average measure: 0,5273045698842729
+
+### task_3_01_n3
+![task_3_01_n3](output/task_3_01_n3_graph.png)
+### task_3_02_n3
+![task_3_02_n3](output/task_3_02_n3_graph.png)
+### task_3_03_n10
+![task_3_03_n10](output/task_3_03_n10_graph.png)
+### task_3_04_n10
+![task_3_04_n10](output/task_3_04_n10_graph.png)
+### task_3_05_n10
+![task_3_05_n10](output/task_3_05_n10_graph.png)
+### task_3_06_n15
+![task_3_06_n15](output/task_3_06_n15_graph.png)
+### task_3_07_n15
+![task_3_07_n15](output/task_3_07_n15_graph.png)
+### task_3_08_n50
+![task_3_08_n50](output/task_3_08_n50_graph.png)
+### task_3_09_n50
+![task_3_09_n50](output/task_3_09_n50_graph.png)
+### task_3_10_n50
+![task_3_10_n50](output/task_3_10_n50_graph.png)

@@ -173,13 +173,21 @@ namespace DeliveryBranchAndBound {
                 V.RemoveAll(node => node.lowerValue >= bestNode.upperValue);
 
                 minUpperValueHistory.Add((visitedNodes, bestNode.upperValue));
-                maxLowerValueHistory.Add((visitedNodes, V.Count > 0 ? V.Max(node => node.lowerValue) : bestNode.lowerValue));
+                maxLowerValueHistory.Add((
+                    visitedNodes,
+                    V.Select(node => node.lowerValue)
+                    .Append(bestNode.lowerValue)
+                    .Max()
+                ));
 
                 if (V.Count == 1 && V[0].upperValue == V[0].lowerValue)
                     return (new Node(GetGreedyPath(V[0]), new List<int>(), CalculateUpperValue, improve ? CalculateLowerValueImprove : CalculateLowerValue), visitedNodes, minUpperValueHistory, maxLowerValueHistory);
             }
 
-            return (new Node(GetGreedyPath(bestNode), new List<int>(), CalculateUpperValue, improve ? CalculateLowerValueImprove : CalculateLowerValue), visitedNodes, minUpperValueHistory, maxLowerValueHistory);
+            Node resultNode = new Node(GetGreedyPath(bestNode), new List<int>(), CalculateUpperValue, improve ? CalculateLowerValueImprove : CalculateLowerValue);
+            minUpperValueHistory.Add((visitedNodes, resultNode.upperValue));
+            maxLowerValueHistory.Add((visitedNodes, resultNode.lowerValue));
+            return (resultNode, visitedNodes, minUpperValueHistory, maxLowerValueHistory);
         }
     }
 }
