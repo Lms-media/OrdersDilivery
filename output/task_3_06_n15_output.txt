@@ -2,6 +2,6 @@
 
 Visited nodes count: 1683 (MinUpperValue)
 Visited nodes count: 1683 (MinUpperValue, improve)
-Best node: Node(fixedPart: [1, 2, 4, 5, 7, 8, 9, 13, 10, 11, 14, 12, 15, 3, 6], variablePart: [], upperValue: 2, lowerValue: 2) (MinUpperValue)
-Best node: Node(fixedPart: [1, 2, 4, 5, 7, 8, 9, 13, 10, 11, 14, 12, 15, 3, 6], variablePart: [], upperValue: 2, lowerValue: 2) (MinUpperValue, improve)
+Best node: Node(Path: [1, 2, 4, 5, 7, 8, 9, 13, 10, 11, 14, 12, 15, 3, 6], upperValue: 2, lowerValue: 2) (MinUpperValue)
+Best node: Node(Path: [1, 2, 4, 5, 7, 8, 9, 13, 10, 11, 14, 12, 15, 3, 6], upperValue: 2, lowerValue: 2) (MinUpperValue, improve)
 Measure: 0

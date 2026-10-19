@@ -18,7 +18,7 @@ namespace DeliveryBranchAndBound {
             Directory.CreateDirectory(outputDirectory);
 
             if (!Directory.Exists(taskDirectory)) {
-                Console.Error.WriteLine($"Папка с задачами не найдена: {taskDirectory}");
+                Console.Error.WriteLine($"not found: {taskDirectory}");
                 return;
             }
 
@@ -39,8 +39,8 @@ namespace DeliveryBranchAndBound {
                     var resultI = TaskReader.ReadFromFile(filePath).Solve(minUpperValue, improve: true);
                     Console.WriteLine($"Visited nodes count: {result.visitedNodes} (MinUpperValue)");
                     Console.WriteLine($"Visited nodes count: {resultI.visitedNodes} (MinUpperValue, improve)");
-                    Console.WriteLine($"Best node: {result.bestValue} (MinUpperValue)");
-                    Console.WriteLine($"Best node: {resultI.bestValue} (MinUpperValue, improve)");
+                    Console.WriteLine($"Best node: {result.bestNode} (MinUpperValue)");
+                    Console.WriteLine($"Best node: {resultI.bestNode} (MinUpperValue, improve)");
                     double measure = (double)(result.visitedNodes - resultI.visitedNodes) / result.visitedNodes;
                     Console.WriteLine($"Measure: {measure}");
 

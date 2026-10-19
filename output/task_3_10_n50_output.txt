@@ -1,7 +1,7 @@
 === Task task_3_10_n50.txt ===
 
-Visited nodes count: 3138571 (MinUpperValue)
-Visited nodes count: 58470 (MinUpperValue, improve)
-Best node: Node(fixedPart: [12, 14, 16, 11, 1, 5, 15, 8, 10, 7, 4, 3, 9, 13, 2, 30, 33, 22, 29, 24, 21, 18, 19, 31, 32, 28, 26, 23, 25, 27, 20, 49, 39, 47, 36, 46, 41, 43, 50, 48, 40, 42, 37, 45, 44, 34, 38, 35, 6, 17], variablePart: [], upperValue: 2, lowerValue: 2) (MinUpperValue)
-Best node: Node(fixedPart: [12, 14, 16, 11, 1, 5, 15, 8, 10, 7, 4, 3, 9, 13, 2, 30, 33, 22, 29, 24, 21, 18, 19, 31, 32, 28, 26, 23, 25, 27, 20, 49, 39, 47, 36, 46, 41, 43, 50, 48, 40, 42, 37, 45, 44, 34, 38, 35, 6, 17], variablePart: [], upperValue: 2, lowerValue: 2) (MinUpperValue, improve)
-Measure: 0,9813705026905557
+Visited nodes count: 3138617 (MinUpperValue)
+Visited nodes count: 58642 (MinUpperValue, improve)
+Best node: Node(Path: [12, 14, 16, 11, 1, 5, 15, 8, 10, 7, 4, 3, 9, 13, 2, 30, 33, 22, 29, 24, 21, 18, 19, 31, 32, 28, 26, 23, 25, 27, 20, 49, 39, 47, 36, 46, 41, 43, 50, 48, 40, 42, 37, 45, 44, 34, 38, 35, 6, 17], upperValue: 2, lowerValue: 2) (MinUpperValue)
+Best node: Node(Path: [12, 14, 16, 11, 1, 5, 15, 8, 10, 7, 4, 3, 9, 13, 2, 30, 33, 22, 29, 24, 21, 18, 19, 31, 32, 28, 26, 23, 25, 27, 20, 49, 39, 47, 36, 46, 41, 43, 50, 48, 40, 42, 37, 45, 44, 34, 38, 35, 6, 17], upperValue: 2, lowerValue: 2) (MinUpperValue, improve)
+Measure: 0,9813159745199876

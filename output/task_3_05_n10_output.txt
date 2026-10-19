@@ -1,7 +1,7 @@
 === Task task_3_05_n10.txt ===
 
-Visited nodes count: 286 (MinUpperValue)
-Visited nodes count: 37 (MinUpperValue, improve)
-Best node: Node(fixedPart: [1, 4, 5, 2, 3, 7, 6, 8, 9, 10], variablePart: [], upperValue: 4, lowerValue: 4) (MinUpperValue)
-Best node: Node(fixedPart: [1, 4, 5, 2, 3, 7, 6, 8, 9, 10], variablePart: [], upperValue: 4, lowerValue: 4) (MinUpperValue, improve)
-Measure: 0,8706293706293706
+Visited nodes count: 298 (MinUpperValue)
+Visited nodes count: 47 (MinUpperValue, improve)
+Best node: Node(Path: [1, 4, 5, 2, 3, 7, 6, 8, 9, 10], upperValue: 4, lowerValue: 4) (MinUpperValue)
+Best node: Node(Path: [1, 4, 5, 2, 3, 7, 6, 8, 9, 10], upperValue: 4, lowerValue: 4) (MinUpperValue, improve)
+Measure: 0,8422818791946308

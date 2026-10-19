@@ -109,7 +109,7 @@ mean(∆i) -> min
 2) max(Н) от количества вершин, которое перебрали
 
 ## Результаты
-Average measure: 0,5273045698842729
+Average measure: 0,5232971853696853
 
 ### task_3_01_n3
 ![task_3_01_n3](output/task_3_01_n3_graph.png)

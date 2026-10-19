@@ -51,8 +51,9 @@ namespace DeliveryBranchAndBound {
             return currentPermutation;
         }
 
-        public int CalculateUpperValue(Node node) {
-            return CalculateTotalPenalty(GetGreedyPath(node));
+        public (List<int>, int) CalculateUpperValue(Node node) {
+            var greedyPath = GetGreedyPath(node);
+            return (greedyPath, CalculateTotalPenalty(greedyPath));
         }
 
         public int CalculateLowerValue(Node node) {
@@ -124,7 +125,7 @@ namespace DeliveryBranchAndBound {
 
             return lowerBound;
         }
-        public (Node bestValue, int visitedNodes, List<(int, int)> upperValueHistory, List<(int, int)> lowerValueHistory) Solve(Func<List<Node>, Node> selectNode, bool improve = false) {
+        public (Node bestNode, int visitedNodes, List<(int, int)> upperValueHistory, List<(int, int)> lowerValueHistory) Solve(Func<List<Node>, Node> selectNode, bool improve = false) {
             List<Node> V = new List<Node> {
                 new Node(
                     new List<int>(),
@@ -170,7 +171,7 @@ namespace DeliveryBranchAndBound {
                     if (child.upperValue < bestNode.upperValue) bestNode = child;
                 }
 
-                V.RemoveAll(node => node.lowerValue >= bestNode.upperValue);
+                V.RemoveAll(node => !node.isEqual(bestNode) && node.lowerValue >= bestNode.upperValue);
 
                 minUpperValueHistory.Add((visitedNodes, bestNode.upperValue));
                 maxLowerValueHistory.Add((
@@ -181,7 +182,7 @@ namespace DeliveryBranchAndBound {
                 ));
 
                 if (V.Count == 1 && V[0].upperValue == V[0].lowerValue)
-                    return (new Node(GetGreedyPath(V[0]), new List<int>(), CalculateUpperValue, improve ? CalculateLowerValueImprove : CalculateLowerValue), visitedNodes, minUpperValueHistory, maxLowerValueHistory);
+                    return (V[0], visitedNodes, minUpperValueHistory, maxLowerValueHistory);
             }
 
             Node resultNode = new Node(GetGreedyPath(bestNode), new List<int>(), CalculateUpperValue, improve ? CalculateLowerValueImprove : CalculateLowerValue);

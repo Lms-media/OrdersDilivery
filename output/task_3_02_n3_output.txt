@@ -2,6 +2,6 @@
 
 Visited nodes count: 1 (MinUpperValue)
 Visited nodes count: 1 (MinUpperValue, improve)
-Best node: Node(fixedPart: [2, 1, 3], variablePart: [], upperValue: 2, lowerValue: 2) (MinUpperValue)
-Best node: Node(fixedPart: [2, 1, 3], variablePart: [], upperValue: 2, lowerValue: 2) (MinUpperValue, improve)
+Best node: Node(Path: [2, 1, 3], upperValue: 2, lowerValue: 2) (MinUpperValue)
+Best node: Node(Path: [2, 1, 3], upperValue: 2, lowerValue: 2) (MinUpperValue, improve)
 Measure: 0
